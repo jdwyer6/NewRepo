@@ -1,3 +1,176 @@
-﻿body
-{
+﻿*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.logo-container, .nav-links, .cart{
+    display: flex;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo {
+    font-weight: 200;
+    margin: 5px;
+    color: black;
+    font-size: 35px;
+}
+
+nav {
+    flex: 3;
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link {
+    color: #5f5f79;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 200;
+   transition: .3s;
+   opacity: .7;
+   border: none;
+   background: none;
+}
+
+.nav-link:hover{
+   
+    opacity: 1;
+    cursor: pointer;
+    
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content p:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.cart {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.cart img{
+    height: 30px;
+    width: 30px;
+}
+
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction{
+    flex: 1;
+}
+
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 200;
+    background: linear-gradient(to-right, #494964, #6f6f89);
+   
+}
+
+.intro-text p{
+    margin: 5px;
+    font-size: 22px;
+    color: #858772;
+    
+}
+
+.cta{
+    padding: 50px 0px 0px 0px;
+}
+
+.cta-signup{
+    border: 2px solid black;
+    background: transparent;
+    color: black;
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-signup:hover{
+    background: gray;
+   opacity: 100%;
+    color: white;
+    border: none;
+}
+
+.cta-how-it-works {
+    background: black;
+    border: none;
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 30px 0px 0px 30px;
+    color: white;
+}
+
+    .cta-how-it-works:hover {
+        background: gray;
+        opacity: 100%;
+        color: white;
+        border: none;
+    }
+
+.cover{
+    flex: 1;
+    background-color: white;
+}
+
+.cover img{
+    height: 50vh;
+
+}
+
+
