@@ -5,6 +5,8 @@
     
 }
 
+/*#region Index*/
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -30,11 +32,15 @@ header{
     flex: 1;
 }
 
+.logo-container a{
+    text-decoration: none;
+}
+
 .logo {
     font-weight: 200;
     margin: 5px;
     color: black;
-    font-size: 35px;
+    font-size: 3vw;
 }
 
 nav {
@@ -48,18 +54,18 @@ nav {
 
 .nav-link {
     color: #5f5f79;
-    font-size: 18px;
+    font-size: 2vw;
     text-decoration: none;
     font-weight: 200;
    transition: .3s;
-   opacity: .7;
+   opacity: 1;
    border: none;
    background: none;
 }
 
 .nav-link:hover{
    
-    opacity: 1;
+    opacity: .6;
     cursor: pointer;
     
 }
@@ -173,4 +179,90 @@ nav {
 
 }
 
+/*#endregion*/
 
+/*#region Catalog*/
+
+.browse-container {
+    height: 200px;
+    margin: 0% 5% 0% 5%;
+    display: flex;
+    font-weight: 100;
+    border-bottom: solid black thin;
+}
+
+.browse-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+}
+
+ .browse-text h1{
+     font-weight: 100;
+ }
+
+.row{
+    display: flex;
+    margin: 3% 5% 0% 5%;
+}
+
+.left{
+    flex:20%;
+    padding: 15px 0;
+}
+
+.left h2{
+    padding-left: 8px;
+margin-left: 20px;
+}
+
+.left ul{
+    margin-left: 20px;
+    list-style-type: circle;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.left ul a{
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+}
+
+.left ul a:hover{
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.right{
+    flex:80%;
+    padding: 15px;
+}
+
+#mySearch{
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+}
+
+#myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myMenu li a{
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+#myMenu li a:hover {
+    background-color: #eee;
+}
+
+/*#endregion*/

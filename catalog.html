@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,31 +10,141 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <title>Nice Chart</title>
 </head>
-<body>
-    <div class="logo-container">
-        <h4 class="logo">Nice Chart</h4>
-    </div>
-    <nav>
-        <ul class="nav-links">
-            <li class="dropdown">
-                <button class="nav-link" href="#">Ensembles</button>
-                <div class="dropdown-content">
-                    <p>7th Grade</p>
-                    <p>8th Grade</p>
-                    <p>9th Grade</p>
-                </div>
-            </li>
-            <li><button class="nav-link" href="#">Catalog</button></li>
-            <li><button class="nav-link" href="#">About</button></li>
-            <li><button class="nav-link" href="#">Log in</button></li>
 
-        </ul>
-    </nav>
-    <div class="cart">
-        <img src="images/cart.png" alt="cart" />
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><h4 class="logo">Nice Chart</h4></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <button class="nav-link" href="#">Ensembles</button>
+                    <div class="dropdown-content">
+                        <p>7th Grade</p>
+                        <p>8th Grade</p>
+                        <p>9th Grade</p>
+                    </div>
+                </li>
+                <a class="nav-link" href="catalog.html">Catalog</a>
+                <li><button class="nav-link" href="#">About</button></li>
+                <li><button class="nav-link" href="#">Log in</button></li>
+
+            </ul>
+        </nav>
+        <div class="cart">
+            <img src="images/cart.png" alt="cart" />
+        </div>
+    </header>
+
+    <div class="browse-container">
+        <div class="browse-text">
+            <h1>Browse our selection...</h1>
+        </div>
+        
     </div>
+   
+    
+
+    <main>
+        <div class="row">
+         
+
+            <div class="left">
+                <h3>Difficulty</h3>
+                <ul>
+                    <li><a href="#">Very Easy</a></li>
+                    <li><a href="#">Easy</a></li>
+                    <li><a href="#">Medium</a></li>
+                    <li><a href="#">Hard</a></li>
+                    <li><a href="#">Very Hard</a></li>
+                </ul>
+
+                <h3>Genre</h3>
+                <ul>
+                    <li><a href="#">Concert</a></li>
+                    <li><a href="#">Festival</a></li>
+                    <li><a href="#">Classical</a></li>
+                    <li><a href="#">Jazz</a></li>
+                    <li><a href="#">Pep/Marching Band</a></li>
+                    <li><a href="#">More...</a></li>
+                </ul>
+
+                <h3>Ensemble Size</h3>
+                <ul>
+                    <li><a href="#">Full Ensemble</a></li>
+                    <li><a href="#">5 or More</a></li>
+                    <li><a href="#">4 or More</a></li>
+                    <li><a href="#">3 or More</a></li>
+                    <li><a href="#">2 or More</a></li>
+                </ul>
+
+                <h3>Percussion</h3>
+                <ul>
+                    <li><a href="#">Features Percussion</a></li>
+                    <li><a href="#">Requires Percussion</a></li>
+                    <li><a href="#">Optional Percussion</a></li>
+                    <li><a href="#">No Percussion</a></li>
+                </ul>
+
+                <h3>Compatability</h3>
+                <ul>
+                    <li><a href="#">Show title compatible with my ensemble</a></li>
+                    <li><a href="#">Show all titles</a></li>
+                </ul>
+
+            </div>
+
+            <div class="right">
+                <h2>Browse Arrangements</h2>
+                <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search..." title="Type in a category" />
+                <ul id="myMenu">
+                    <li><a href="#">Agnus Dei</a></li>
+                    <li><a href="#">Molly on the Shore</a></li>
+                    <li><a href="#">Rhapsody in Blue</a></li>
+                    <li><a href="#">Arabian Dances</a></li>
+                    <li><a href="#">I Got Rhythm</a></li>
+                    <li><a href="#">The Mandalorian</a></li>
+                    <li><a href="#">You Belong with Me</a></li>
+                    <li><a href="#">A Whole New World</a></li>
+                    <li><a href="#">Theme from The Lion King</a></li>
+                    <li><a href="#">Theme from Mulan</a></li>
+                    <li><a href="#">The Tempest</a></li>
+                    <li><a href="#">Cookin at the Continental</a></li>
+                    <li><a href="#">Satin Doll</a></li>
+                    <li><a href="#">Crazy Train</a></li>
+                    <li><a href="#">First Suite in F</a></li>
+                    <li><a href="#">Fugue in Bb</a></li>
+                </ul>
+            </div>
+
+            </div>
+
+            <script>
+                function myFunction() {
+                    var input, filter, ul, li, a, i;
+                    input = document.getElementById("mySearch");
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("myMenu");
+                    li = ul.getElementsByTagName("li");
+                    for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            li[i].style.display = "";
+                        } else {
+                            li[i].style.display = "none";
+                        }
+                    }
+                }
+            </script>
+
+
+</main>
 
 </body>
 </html>
