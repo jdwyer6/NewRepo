@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" >
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-   
+
     <header>
         <div class="logo-container">
             <a href="index.html"><h4 class="logo">Nice Chart</h4></a>
@@ -34,7 +34,7 @@
                 <a class="nav-link" href="catalog.html">Catalog</a>
                 <li><button class="nav-link" href="#">About</button></li>
                 <li><button class="nav-link" href="#">Log in</button></li>
-                
+
             </ul>
         </nav>
         <div class="cart">
@@ -43,25 +43,30 @@
     </header>
 
     <main>
-        <section class="presentation">
-            <div class="introduction">
-                <div class="intro-text"></div>
-                <h1>Personalized and professional arrangements</h1>
-                <p>
-                    Perfect for your unique ensemble.
-                </p>
+        <div class ="create-account">
+            <h1>Create a Free Account</h1>
+            <p>Already have an account? Sign in <a href="login.html">here</a></p>
+        </div>
+       <div class="sign-up-container">
+           <div class="sign-up-left">
+               <form action="action_page.php">
+                   <label for="fname">First Name</label>
+                   <input type="text" id="fname" name="firstname"
+                          placeholder="Your name..." />
+                   <label for="lname">Last Name</label>
+                   <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                   <label for="email">Email</label>
+                   <input type="text" id="email" name="email" placeholder="Your email"/>
+                   <label for="pwd">Password</label>
+                   <input type="password" id="pwd" name="pwd" placeholder="Your Password" />
+                   <input type="submit" value="Create Account">
+               </form>
+           </div>
+           <div class="sign-up-right">
+               <img src="images/jazztrumpet.jpg" />
+           </div>
+       </div>
 
-                <div class="cta">
-                    <a href="sign_up.html"><button class="cta-signup">Sign up</button></a>
-                    <button class="cta-how-it-works">See how it works</button>
-                </div>
-            </div>
-            <div class="cover">
-                <img src="images/sax.jpg" alt="sax"/>
-            </div>
-        </section>
-
-        
     </main>
 
 </body>
