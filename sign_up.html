@@ -16,58 +16,62 @@
 </head>
 
 <body>
+    <div class="background-image-signup">
+        <header>
+            <div class="logo-container">
+                <a href="index.html"><h4 class="logo">Nice Chart</h4></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <button class="nav-link" href="ensembles.html">Ensembles</button>
+                        <div class="dropdown-content">
+                            <p>7th Grade</p>
+                            <p>8th Grade</p>
+                            <p>9th Grade</p>
+                        </div>
+                    </li>
+                    <a class="nav-link" href="catalog.html">Catalog</a>
+                    <li><button class="nav-link" href="#">About</button></li>
+                    <a class="nav-link" href="login.html">Log in</a>
 
-    <header>
-        <div class="logo-container">
-            <a href="index.html"><h4 class="logo">Nice Chart</h4></a>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li class="dropdown">
-                    <button class="nav-link" href="ensembles.html">Ensembles</button>
-                    <div class="dropdown-content">
-                        <p>7th Grade</p>
-                        <p>8th Grade</p>
-                        <p>9th Grade</p>
-                    </div>
-                </li>
-                <a class="nav-link" href="catalog.html">Catalog</a>
-                <li><button class="nav-link" href="#">About</button></li>
-                <a class="nav-link" href="login.html">Log in</a>
+                </ul>
+            </nav>
+        </header>
 
-            </ul>
-        </nav>
-        <div class="cart">
-            <img src="images/cart.png" alt="cart" />
-        </div>
-    </header>
+        <main>
+            <div class="create-account">
+                <h1>Create a Free Account</h1>
+                <p>Already have an account? Sign in <a href="login.html">here</a></p>
+            </div>
+            <div class="sign-up-container">
+                <div class="sign-up-left">
+                    <form action="action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname"
+                               placeholder="Your name..." />
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Your email" />
+                        <label for="pwd">Password</label>
+                        <input type="password" id="pwd" name="pwd" placeholder="Your Password" />
+                        <input type="submit" value="Create Account">
+                    </form>
+                </div>
+                <div class="sign-up-right">
+                    <p>Browse millions of arrangements</p>
+                    <p>Save time lesson planning and let our algorithm do the work to find an arrangement perfect for your group</p>
+                    <p>Competetitive Pricing</p>
+                    <p>Access your title whenever you need them</p>
+                    <p>Search by your group's ability level or by title and customize to fit your needs</p>
+           
+                </div>
+            </div>
 
-    <main>
-        <div class ="create-account">
-            <h1>Create a Free Account</h1>
-            <p>Already have an account? Sign in <a href="login.html">here</a></p>
-        </div>
-       <div class="sign-up-container">
-           <div class="sign-up-left">
-               <form action="action_page.php">
-                   <label for="fname">First Name</label>
-                   <input type="text" id="fname" name="firstname"
-                          placeholder="Your name..." />
-                   <label for="lname">Last Name</label>
-                   <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                   <label for="email">Email</label>
-                   <input type="text" id="email" name="email" placeholder="Your email"/>
-                   <label for="pwd">Password</label>
-                   <input type="password" id="pwd" name="pwd" placeholder="Your Password" />
-                   <input type="submit" value="Create Account">
-               </form>
-           </div>
-           <div class="sign-up-right">
-               <img src="images/jazztrumpet.jpg" />
-           </div>
-       </div>
-
-    </main>
+        </main>
+    </div>
+  
 
 </body>
 </html>

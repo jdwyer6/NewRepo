@@ -5,10 +5,16 @@
     
 }
 /*Reference: musescore.com*/
+/*Reference: https://business.udemy.com*/
 /*#region Index*/
 
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+.background-image {
+    background-image: url("images/pianobackgroundopacity50.png");
+    height: 1000px;
 }
 
 button{
@@ -19,10 +25,9 @@ header {
     display: flex;
     width: 100%;
     margin: auto;
-    height: 7vh;
+    padding: .4%;
+    /* height: 7vh;*/
     align-items: center;
-    background-color: #00909f;
-
 }
 
 .logo-container, .nav-links, .cart{
@@ -43,26 +48,28 @@ header {
 .logo {
     font-weight: 200;
     margin: 5px;
-    color: white;
-    font-size: 2vw;
-    margin-top: 15px;
+    color: black;
+    font-size: 2.3vw;
+   
 }
 
 nav {
     flex: 3;
+    margin-right: 30%;
+    margin-left: 5%;
 }
 
 .nav-links {
     justify-content: space-around;
     list-style: none;
-    margin-top: 15px;
+ 
 }
 
 .nav-link {
-    color: white;
+    color: black;
     font-size: 1.5vw;
     text-decoration: none;
-    font-weight: 200;
+    font-size:20px;
     transition: .3s;
     opacity: 1;
     border: none;
@@ -100,94 +107,145 @@ nav {
     cursor: pointer;
 }
 
-.cart {
-    flex: 1;
-    justify-content: flex-end;
-}
-
-.cart img{
-    height: 30px;
-    width: 30px;
-}
-
-.presentation{
+.presentation {
     display: flex;
     width: 90%;
     margin: auto;
     min-height: 80vh;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
-.introduction{
-    flex: 1;
-}
 
-.intro-text h1{
+ h1 {
     font-size: 44px;
     font-weight: 200;
     background: linear-gradient(to-right, #494964, #6f6f89);
-   
 }
 
-.intro-text p{
+.presentation p {
     margin: 5px;
     font-size: 22px;
-    color: #858772;
+    color: black;
+    text-align: center;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
     
 }
 
 .cta{
     padding: 50px 0px 0px 0px;
+
 }
 
-.cta-signup{
-    border: 2px solid black;
+.cta-signup {
+    border: 2px solid #DB660F;
     background: transparent;
     color: black;
     width: 150px;
     height: 100px;
     cursor: pointer;
     font-size: 16px;
+  
 }
 
-.cta-signup:hover{
-    background: gray;
-   opacity: 100%;
-    color: white;
-    border: none;
-}
-
-.cta-how-it-works {
-    background: black;
-    border: none;
-    width: 150px;
-    height: 100px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 30px 0px 0px 30px;
-    color: white;
-}
-
-    .cta-how-it-works:hover {
-        background: gray;
+    .cta-signup:hover {
+        background: #DB660F;
         opacity: 100%;
         color: white;
         border: none;
     }
 
-.cover{
-    flex: 1;
-    background-color: white;
+.cta-how-it-works {
+    background: transparent;
+    border: 2px solid #DB660F;
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 30px 0px 0px 30px;
+    color: black;
+    font-weight: 400;
 }
 
-.cover img{
-    height: 50vh;
+    .cta-how-it-works:hover {
+        background: #DB660F;
+        opacity: 100%;
+        color: white;
+        border: none;
+    }
 
+.preview {
+    display: flex;
+
+    background-image: url("images/trumpet.jpg");
+    height: 165vh;
+    background-repeat: no-repeat;
+}
+
+.preview-left{
+    flex: 1;
+    flex-direction: column;
+}
+
+.preview-right{
+    flex: 1;
+    padding: 5vh;
+    margin-top: 50px;
+}
+
+.preview-right img{
+    object-fit: scale-down;
+    height: 500px;
+}
+
+.preview h1 {
+    text-align: center;
+    padding: 5vh;
+}
+
+.preview p {
+    text-align: center;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.try-it-out-button {
+    border: 2px solid #DB660F;
+    background: transparent;
+    color: black;
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 40px 20px 40px 20px;
+}
+
+.try-it-out-button:hover {
+    background: #DB660F;
+    opacity: 100%;
+    color: white;
+    border: none;
+}
+
+.preview-right p{
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.index-button{
+    text-align:center;
 }
 
 /*#endregion*/
 
 /*#region Catalog*/
+
 
  .catalog-content-container{
      display: flex;
@@ -239,7 +297,7 @@ nav {
 
 .left {
     flex: 20%;
-    background-color: #f2f2f2;
+ 
     height: 100%;
 }
 
@@ -300,6 +358,7 @@ nav {
     text-decoration: none;
     color: black;
     display: block;
+
 }
 
 #myMenu li a:hover {
@@ -310,35 +369,61 @@ nav {
 
 /*#region signup*/
 
+.background-image-signup{
+    background-image: url("images/music.jpg");
+    height: 150vh;
+    background-repeat: no-repeat;
+}
+
 .create-account {
     font-family: 'Poppins', sans-serif;
     height: 100px;
     text-align: center;
     margin: 5%;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 3vh;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #888888;
+    text-align: center;
 }
 
 .sign-up-container{
     display: flex;
+    height: 60vh;
 }
 
 .sign-up-right {
-    flex: 60%;
+    flex: 50%;
     margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    border: none;
+    box-shadow: 5px 10px 18px #888888;
+    background-color: white;
+    border-radius: 5px;
 }
 
-.sign-up-right img{
-    height: 50vh;
-    float: right;
+.sign-up-right p{
+    padding: 3%;
+    font-size: 20px;
+    font-weight: 200;
 }
+
 
 .sign-up-left {
-    flex: 40%;
-    border-radius: 5px;
-    background-color: #f2f2f2;
+    flex: 50%;
     padding: 20px;
     margin-left: 5%;
+    margin-right: 5%;
+    border: none;
+    box-shadow: 5px 10px 18px #888888;
+    background-color: white;
+    border-radius: 5px;
 }
 
 input[type=text], select {
@@ -363,7 +448,7 @@ input[type=password], select {
 
 input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color:transparent;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -373,7 +458,7 @@ input[type=submit] {
 }
 
     input[type=submit]:hover {
-        background-color: #45a049;
+        background-color: #1697A8;
     }
 
 
@@ -439,13 +524,13 @@ input,
 
 /* style the submit button */
 input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #DB680F;
     color: white;
     cursor: pointer;
 }
 
     input[type=submit]:hover {
-        background-color: #45a049;
+        background-color: #FFAD6E;
     }
 
 /* Two-column layout */
