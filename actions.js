@@ -9,3 +9,13 @@ window.onclick = function(event) {
   }
 }
 
+
+function fluteNumber() {
+    var input = document.getElementById("flute-button").value;
+    document.getElementById('flutes').innerHTML = 'Flutes' + ' ' + input;
+}
+
+function trumpetNumber() {
+    var input = document.getElementById("trumpet-button").value;
+    document.getElementById('trumpet').innerHTML = 'Trumpets' + ' ' + input;
+}

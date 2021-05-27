@@ -107,6 +107,11 @@ nav {
     cursor: pointer;
 }
 
+.ensembles-link{
+    text-decoration: none;
+    color: black;
+}
+
 .presentation {
     display: flex;
     width: 90%;
@@ -245,6 +250,7 @@ nav {
 /*#endregion*/
 
 /*#region Catalog*/
+
 
 
  .catalog-content-container{
@@ -599,5 +605,41 @@ input[type=submit] {
         text-align: center;
     }
 }
+
+/*#endregion*/
+
+/*#region Ensembles*/
+.ensembles-container{
+    display: flex;
+}
+
+.instrument-selection{
+    flex: 50%;
+    margin: 5%;
+    background-color: rgb(238 238 238);
+    border-radius: 5px;
+}
+
+.instrument-output {
+    flex: 50%;
+    margin: 5%;
+}
+
+.instrument {
+    display: flex;
+
+}
+
+.instrument-type{
+    flex: 80%;
+    font-size: 25px;
+    font-weight: 200;
+    
+}
+
+input[type=number]{
+    flex: 20%;
+}
+
 
 /*#endregion*/

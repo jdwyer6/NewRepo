@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <script src="actions.js"></script>
     <title>Nice Chart</title>
 </head>
 
@@ -24,8 +25,9 @@
         <nav>
             <ul class="nav-links">
                 <li class="dropdown">
-                    <button class="nav-link" href="#">Ensembles</button>
+                    <button class="nav-link" href="ensembles.html">Ensembles</button>
                     <div class="dropdown-content">
+                        <a class="ensembles-link" href="ensembles.html">My Ensembles</a>
                         <p>7th Grade</p>
                         <p>8th Grade</p>
                         <p>9th Grade</p>
@@ -37,13 +39,32 @@
 
             </ul>
         </nav>
-        <div class="cart">
-            <img src="images/cart.png" alt="cart" />
-        </div>
+
     </header>
 
     <main>
-   
+        <div class="ensembles-container">
+            <div class="instrument-selection">
+                <div class="instrument">
+                    <label class="instrument-type">Flutes</label>
+                    <input id="flute-button" type="number" min="1" max="9" step="1" value="1">
+                    <button onclick="fluteNumber()">Save</button>
+                </div>
+                <div class="instrument">
+                    <label class="instrument-type">Trumpet</label>
+                    <input id="trumpet-button" type="number" min="1" max="9" step="1" value="1">
+                    <button onclick="trumpetNumber()">Save</button>
+                </div>
+
+            </div>
+            <div class="instrument-output">
+                <p id="flutes"></p>
+                <p id="trumpet"></p>
+
+
+            </div>
+        </div>
+
     </main>
 
 </body>
