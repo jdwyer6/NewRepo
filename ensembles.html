@@ -46,14 +46,17 @@
         <div class="ensembles-container">
             <div class="instrument-selection">
                 <div class="instrument">
-                    <label class="instrument-type">Flutes</label>
-                    <input id="flute-button" type="number" min="1" max="9" step="1" value="1">
+                    <label id="instrumentType">Flutes</label>
+                    <input id="instrumentQuantity" type="number" min="1" max="9" step="1" value="1">
                     <button onclick="fluteNumber()">Save</button>
                 </div>
                 <div class="instrument">
                     <label class="instrument-type">Trumpet</label>
                     <input id="trumpet-button" type="number" min="1" max="9" step="1" value="1">
                     <button onclick="trumpetNumber()">Save</button>
+                </div>
+                <div class="instrument">
+                    <button id="addInstruments">Add</button>
                 </div>
 
             </div>

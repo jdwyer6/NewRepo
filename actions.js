@@ -10,12 +10,18 @@ window.onclick = function(event) {
 }
 
 
+let instrumentType = document.getElementById("instrumentType");
+let instrumentQuantity = document.getElementById("instrumentQuantity").value;
+
+
 function fluteNumber() {
-    var input = document.getElementById("flute-button").value;
-    document.getElementById('flutes').innerHTML = 'Flutes' + ' ' + input;
+    alert(instrumentType);
+    document.getElementById('flutes').innerHTML = instrumentType + ' ' + instrumentQuantity;
 }
 
 function trumpetNumber() {
     var input = document.getElementById("trumpet-button").value;
     document.getElementById('trumpet').innerHTML = 'Trumpets' + ' ' + input;
 }
+
+
